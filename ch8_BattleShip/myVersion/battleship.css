@@ -1,0 +1,80 @@
+body {
+  background-color: black;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  color: rgb(49, 228, 49);
+}
+
+section {
+  text-align: center;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Roboto Mono',
+  monospace;
+  font-size: 1rem;
+  background-color: rgb(0, 255, 81);
+  display: none;
+}
+
+.displayBtn {
+  display: inline;
+}
+
+#message-area {
+  font-weight: 400;
+  /* position: absolute; */
+  color: rgb(207, 66, 47);
+  top: 60px;
+  /* left: 20px; */
+  margin: auto;
+}
+
+#game-div {
+  width: 1024px;
+  height: 863px;
+  margin: auto;
+}
+
+#image {
+  position: absolute;
+}
+
+.game-board {
+  position: relative;
+  list-style: none;
+  top: 100px;
+  left: -23px;
+  display: grid;
+  grid-template-columns: repeat(7, 92px);
+  grid-template-rows: repeat(7, 92px);
+  justify-content: center;
+  gap: 4.5px;
+}
+
+.game-board li {
+  background-color: rgba(43, 195, 43, 0.504);
+  box-shadow: 0 0 10px 3px rgb(13, 255, 0);
+  cursor: pointer;
+}
+
+.game-board li.disabled {
+  cursor: default;
+  background-color: rgba(13, 255, 0, 0);
+}
+
+.miss {
+  background: url("/ch8_BattleShip/images/miss.png") no-repeat center center;
+}
+
+.hit {
+  background: url("/ch8_BattleShip/images/ship.png") no-repeat center center;
+}
